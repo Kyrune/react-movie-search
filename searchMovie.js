@@ -1,7 +1,20 @@
 import React from 'react';
 
 export default function SearchMovie() {
-    return (
-        <div></div>
-    );
-};
+  return (
+    <form className="form">
+      <label className="label" htmlFor="query">
+        Movie Title
+      </label>
+      <input
+        className="input"
+        type="text"
+        name="query"
+        placeholder="i.e. Jurassic Park"
+      />
+      <button className="button" type="submit">
+        Search
+      </button>
+    </form>
+  );
+}
