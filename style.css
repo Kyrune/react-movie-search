@@ -35,3 +35,9 @@ small {
 .form {
     display: grid;
 }
+
+.label {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+}
