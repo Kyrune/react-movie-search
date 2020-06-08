@@ -10,10 +10,15 @@ export default function SearchMovie() {
 
     const url = "api key here";
 
-    const res = await fetch(url);
-    const data = await res.json();
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+  
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
 
-    console.log(data);
   };
 
 
