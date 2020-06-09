@@ -5,6 +5,8 @@ export default function SearchMovie() {
   // states - input query, movies
   const [query, setQuery] = useState('');
 
+  const [ movies, setMovies] = useState([]);
+
   const searchMovies = async (e) => {
     e.preventDefault();
 
@@ -13,8 +15,7 @@ export default function SearchMovie() {
     try {
       const res = await fetch(url);
       const data = await res.json();
-  
-      console.log(data);
+      setMovies(data.results);
     } catch (err) {
       console.error(err);
     }
