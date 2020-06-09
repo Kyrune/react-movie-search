@@ -8,8 +8,6 @@ export default function SearchMovie() {
   const searchMovies = async (e) => {
     e.preventDefault();
 
-    const query = "Jurassic Park";
-
     const url = "api key here";
 
     try {
@@ -35,6 +33,7 @@ export default function SearchMovie() {
         name="query"
         placeholder="i.e. Jurassic Park"
         value={query}
+        onChange={(e) => setQuery(e.target.value)}
       />
       <button className="button" type="submit">
         Search
