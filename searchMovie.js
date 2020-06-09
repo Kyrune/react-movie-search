@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function SearchMovie() {
 
+  // states - input query, movies
+  const [query, setQuery] = useState('');
+
   const searchMovies = async (e) => {
     e.preventDefault();
-    console.log("submitting");
 
     const query = "Jurassic Park";
 
@@ -32,6 +34,7 @@ export default function SearchMovie() {
         type="text"
         name="query"
         placeholder="i.e. Jurassic Park"
+        value={query}
       />
       <button className="button" type="submit">
         Search
