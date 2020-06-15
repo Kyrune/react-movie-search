@@ -94,3 +94,8 @@ small {
     margin-bottom: 0.5rem;
     font-size: 3.2rem;
 }
+
+.card--image {
+    margin: 0 auto;
+    display: block;
+}
