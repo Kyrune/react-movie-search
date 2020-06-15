@@ -78,6 +78,10 @@ small {
     }
 }
 
+.card--list {
+    margin-top: 4rem;
+}
+
 .card {
     padding: 2rem 4rem;
     border-radius: 10px;
