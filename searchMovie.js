@@ -43,7 +43,7 @@ export default function SearchMovie() {
         {movies
           .filter((movie) => movie.poster_path)
           .map((movie) => (
-            <MovieCard movie={movie} />
+            <MovieCard movie={movie} key={movie.id} />
           ))}
       </div>
     </>
